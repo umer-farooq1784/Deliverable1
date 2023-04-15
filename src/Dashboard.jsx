@@ -3,11 +3,12 @@ import { IoHome } from "react-icons/io5";
 import { NavLink, Route, Routes } from "react-router-dom";
 import { DashboardNewSong } from ".";
 import { isActiveStyles, isNotActiveStyles } from "./utils/styles";
-import DashboardAlbum from "./DashboardAlbum";
-//import DashboardArtist from "./DashboardArtist";
+import DashboardArtist from "./DashboardArtist";
+import DashboardAlbum from "./DashBoardAlbum";
 //import DashBoardHome from "./DashBoardHome";
 import DashboardSongs from "./DashboardSongs";
 //import DashboardUser from "./DashboardUser";
+//import DashboardNewSong from "./DashboardNewSong";
 import Header from "./Header";
 
 const Dashboard = () => {
@@ -33,7 +34,10 @@ const Dashboard = () => {
       <div className="my-4 w-full p-4">
         <Routes>
           <Route path="/songs" element={<DashboardSongs />} />
+          <Route path="/artist" element={<DashboardArtist />} />
+          <Route path="/albums" element={<DashboardAlbum />} />
           
+          {/*<Route path="/newSong" element={<DashboardNewSong />} />*/}
         </Routes>
       </div>
     </div>

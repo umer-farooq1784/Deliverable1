@@ -5,6 +5,7 @@ import Login from "./Login.jsx";
 import Home from  "./home.jsx";
 import Dashboard from "./Dashboard";
 import { motion, AnimatePresence } from "framer-motion";
+import MusicPlayer from "./MusicPlayer";
 
 
 function App() {
@@ -25,6 +26,18 @@ function App() {
             className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
           >
           </motion.div>
+
+          
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 50 }}
+            className={`fixed min-w-[700px] h-26  inset-x-0 bottom-0  bg-cardOverlay drop-shadow-2xl backdrop-blur-md flex items-center justify-center`}
+          >
+            <MusicPlayer />
+          </motion.div>
+          
+        
       </div>
     </AnimatePresence>
   );

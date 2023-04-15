@@ -1,11 +1,21 @@
 import React from 'react';
 import "./App.css";
 import "./home.jsx"
+import { LoginBg } from "./assets/video";
 const Login = () =>
  { 
   return (
     <div className="relative w-screen h-screen">
 
+
+      <video
+        src={LoginBg}
+        type="video/mp4"
+        autoPlay
+        muted
+        loop
+        className="w-full h-full object-cover"
+      ></video>
       <div className="absolute inset-0 bg-darkOverlay flex items-center justify-center p-4">
         <div className="w-full md:w-375 p-4 bg-lightOverlay shadow-2xl rounded-md backdrop-blur-md flex flex-col items-center justify-center">
           <div onclick="myFunction(){
