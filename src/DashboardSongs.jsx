@@ -3,19 +3,24 @@ import { motion } from "framer-motion";
 import { AiOutlineClear } from "react-icons/ai";
 import { IoAdd } from "react-icons/io5";
 import { NavLink } from "react-router-dom";
+import {Routes, Route, useNavigate} from 'react-router-dom';
 
 
 const DashboardSongs = () => {
-
+  
+    const navigate = useNavigate();
+    const navigateToNew = () => {
+    navigate( "/NewSong");
+    };
   return (
     <div className="w-full p-4 flex items-center justify-center flex-col">
       <div className="w-full flex justify-center items-center gap-24">
-        <NavLink
-          to={"/dashboard/newSong"}
+        <div 
+          onClick={navigateToNew}
           className="flex items-center px-4 py-3 border rounded-md border-gray-300 hover:border-gray-400 hover:shadow-md cursor-pointer"
         >
         <IoAdd />
-        </NavLink>
+        </div>
         <input
           type="text"
           placeholder="Search here"

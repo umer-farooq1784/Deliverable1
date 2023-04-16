@@ -6,6 +6,7 @@ import Home from  "./home.jsx";
 import Dashboard from "./Dashboard";
 import { motion, AnimatePresence } from "framer-motion";
 import MusicPlayer from "./MusicPlayer";
+import NewSong from "./NewSong";
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/*" element={<Home />} />
           <Route path="/dashboard/*" element={<Dashboard />} />
+          <Route path="/NewSong" element={<NewSong />} />
         </Routes>
         </BrowserRouter>
           <motion.div
