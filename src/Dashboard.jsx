@@ -5,9 +5,9 @@ import { DashboardNewSong } from ".";
 import { isActiveStyles, isNotActiveStyles } from "./utils/styles";
 import DashboardArtist from "./DashboardArtist";
 import DashboardAlbum from "./DashBoardAlbum";
-//import DashBoardHome from "./DashBoardHome";
+import DashboardHome from "./DashboardHome";
 import DashboardSongs from "./DashboardSongs";
-//import DashboardUser from "./DashboardUser";
+import DashboardUser from "./DashboardUser";
 //import DashboardNewSong from "./DashboardNewSong";
 import Header from "./Header";
 
@@ -34,8 +34,11 @@ const Dashboard = () => {
       <div className="my-4 w-full p-4">
         <Routes>
           <Route path="/songs" element={<DashboardSongs />} />
+          <Route path="/user" element={<DashboardUser />} />
           <Route path="/artist" element={<DashboardArtist />} />
           <Route path="/albums" element={<DashboardAlbum />} />
+          <Route path="/home" element={<DashboardHome />} />
+          
           
           {/*<Route path="/newSong" element={<DashboardNewSong />} />*/}
         </Routes>

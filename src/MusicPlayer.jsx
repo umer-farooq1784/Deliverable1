@@ -47,13 +47,29 @@ const MusicPlayer = () => {
           </motion.i>
         </div>
         <div className="flex-1">
-          <AudioPlayer
-            src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlnaHR8fHx8fHwxNjgxNTAzOTA3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-           // onPlay={() => console.log("is playing")}
-           autoPlay={true}
-            showSkipControls={true}
+
+          {/* <AudioPlayer
+          autoPlay
+          src="http://example.com/audio.mp3"
+          onPlay={e => console.log("onPlay")}
+          // other props here
+        /> */}
+          {/* <AudioPlayer
+           src="https://www.youtube.com/watch?v=bbQqqWR4dr0"
+           onPlay={() => console.log("is playing")}
+           autoPlay
+           showSkipControls
             
-          />
+          /> */}
+
+          <div>
+          <img
+          src="player.png"
+          className="w-40 h-20 object-cover rounded-md"
+          alt=""
+        />
+          </div>
+        
         </div>
         <div className="h-full flex items-center justify-center flex-col gap-3">
           <motion.i whileTap={{ scale: 0.8 }} >
