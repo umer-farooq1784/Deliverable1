@@ -2,13 +2,15 @@ import React, { useState } from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 import Logo from './logo.png';
 import { motion } from "framer-motion";
-
+import Payment from "./payment";
 
 
 const Header = () => {
   const [isMenu, setIsMenu] = useState(false);
   const navigate = useNavigate();
-  
+  const nav = () => {
+    navigate( "/payment");
+    };
   return (
     <header className="flex items-center w-full p-4 md:py-2 md:px-6">
       <NavLink to={"/"}>
@@ -21,7 +23,7 @@ const Header = () => {
         {/* prettier-ignore */}
         <li className="mx-5 text-lg"><NavLink to={'/musics'}>Musics</NavLink></li>
         {/* prettier-ignore */}
-        <li className="mx-5 text-lg"><NavLink to={'/premium'}>Premium</NavLink></li>
+        <li className="mx-5 text-lg"onClick={nav}>Premium</li>
         {/* prettier-ignore */}
         <li className="mx-5 text-lg"><NavLink to={'/contact'} >Contact</NavLink></li>
       </ul>

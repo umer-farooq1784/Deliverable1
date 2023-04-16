@@ -7,7 +7,7 @@ import Dashboard from "./Dashboard";
 import { motion, AnimatePresence } from "framer-motion";
 import MusicPlayer from "./MusicPlayer";
 import NewSong from "./NewSong";
-
+import Payment from "./payment";
 
 function App() {
   return (
@@ -19,6 +19,7 @@ function App() {
           <Route path="/*" element={<Home />} />
           <Route path="/dashboard/*" element={<Dashboard />} />
           <Route path="/NewSong" element={<NewSong />} />
+          <Route path="/payment" element={<Payment />} />
         </Routes>
         </BrowserRouter>
           <motion.div
