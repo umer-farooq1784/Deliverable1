@@ -1,12 +1,13 @@
 import React from "react";
-
 import { motion } from "framer-motion";
 
+import { IoChevronDown } from "react-icons/io5";
 
 const FilterButtons = () => {
   return (
     <div className="border border-gray-300 rounded-md px-4 py-1 relative cursor-pointer hover:border-gray-400">
-      <motion.div
+      <IoChevronDown className="text-base text-textColor duration-150 transition-all ease-in-out "/>
+        <motion.div
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         exit={{ opacity: 0, y: 50 }}

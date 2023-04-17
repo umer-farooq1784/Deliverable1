@@ -1,30 +1,19 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Header from "./Header";
 import SearchBar from "./SearchBar.jsx";
-import Filter from "./Filter";
 import { motion } from "framer-motion";
-import  getAllSongs  from "./api.js";
-import { SongCard } from "./DashboardSongs";
 
 const Home = () => {
- 
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center bg-primary">
       <Header />
       <SearchBar />
-     
-
-     
         <p className="my-4 text-base text-textColor">
           Searched for :
-          <span className="text-xl text-cartBg font-semibold">
-          
-          </span>
         </p>
   
       <div className="w-full h-auto flex items-center justify-evenly gap-4 flex-wrap p-4">
-     {/* <Filter  />*/}
-      <HomeSongContainer/>
+        <HomeSongContainer/>
       </div>
     </div>
   );
