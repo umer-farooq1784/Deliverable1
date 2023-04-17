@@ -56,9 +56,11 @@ const Header = () => {
               </p>
             </NavLink>
             
-            <p className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out">
-              My Favourites
-            </p>
+            <NavLink to={"/favourites"}>
+              <p className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out">
+                Favourites
+              </p>
+            </NavLink>
             <hr />
            
             <>

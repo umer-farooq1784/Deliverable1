@@ -43,8 +43,9 @@ const DashboardSongs = () => {
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold">
             <span className="text-sm font-semibold text-textColor">
-              Count :{"3"}
+              Count : 3
             </span>
+            
           </p>
         </div>
         <SongContainer  />
@@ -58,8 +59,7 @@ export const SongContainer = ({ data }) => {
     <div className=" w-full  flex flex-wrap gap-3  items-center justify-evenly">
      
       <SongCard />
-      <SongCard />
-      <SongCard />
+      
         
     </div>
   );
@@ -81,7 +81,7 @@ export const SongCard = () => {
           <div className="w-40 min-w-[160px] h-40 min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden">
             <motion.img
               whileHover={{ scale: 1.05 }}
-             src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlnaHR8fHx8fHwxNjgxNTAzOTA3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+             src="https://a10.gaanacdn.com/images/albums/73/2668573/crop_480x480_2668573.jpg"
               alt=""
               className=" w-full h-full rounded-lg object-cover"
             />
@@ -92,7 +92,68 @@ export const SongCard = () => {
           <p className="text-base text-headingColor font-semibold my-2">
           
             <span className="block text-sm text-gray-400 my-1">
-            Maheen
+            Beautiful People
+            </span>
+          </p>
+        </motion.div>
+
+
+        {/* card 2 just for front end  */}
+
+
+        <motion.div
+          
+          whileTap={{ scale: 0.8 }}
+          initial={{ opacity: 0, translateX: -50 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.3}}
+          className="relative w-40 min-w-210 px-2 py-4 cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-lg flex flex-col items-center"
+        
+        >
+          <div className="w-40 min-w-[160px] h-40 min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden">
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+             src="https://static.stereogum.com/uploads/2022/03/unnamed-2-1648767754.jpg"
+              alt=""
+              className=" w-full h-full rounded-lg object-cover"
+            />
+            
+          </div>
+          
+
+          <p className="text-base text-headingColor font-semibold my-2">
+          
+            <span className="block text-sm text-gray-400 my-1">
+            As It Was
+            </span>
+          </p>
+        </motion.div>
+
+
+        <motion.div
+          
+          whileTap={{ scale: 0.8 }}
+          initial={{ opacity: 0, translateX: -50 }}
+          animate={{ opacity: 1, translateX: 0 }}
+          transition={{ duration: 0.3}}
+          className="relative w-40 min-w-210 px-2 py-4 cursor-pointer hover:shadow-xl hover:bg-card bg-gray-100 shadow-md rounded-lg flex flex-col items-center"
+        
+        >
+          <div className="w-40 min-w-[160px] h-40 min-h-[160px] rounded-lg drop-shadow-lg relative overflow-hidden">
+            <motion.img
+              whileHover={{ scale: 1.05 }}
+             src="https://upload.wikimedia.org/wikipedia/en/9/90/Scorpion_by_Drake.jpg"
+              alt=""
+              className=" w-full h-full rounded-lg object-cover"
+            />
+            
+          </div>
+          
+
+          <p className="text-base text-headingColor font-semibold my-2">
+          
+            <span className="block text-sm text-gray-400 my-1">
+            God's Plan
             </span>
           </p>
         </motion.div>

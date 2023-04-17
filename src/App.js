@@ -9,6 +9,7 @@ import MusicPlayer from "./MusicPlayer";
 import NewSong from "./NewSong";
 import Payment from "./payment";
 import Contact from "./Contact";
+import Favourites from "./Favourites";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/NewSong" element={<NewSong />} />
           <Route path="/payment" element={<Payment />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/favourites" element={<Favourites />} />
         </Routes>
         </BrowserRouter>
           <motion.div

@@ -43,9 +43,9 @@ const DashboardUser = () => {
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold">
             <span className="text-sm font-semibold text-textColor">
-              Count : 
+              Count : 3 
             </span>
-               3
+               
           </p>
         </div>
 
@@ -64,11 +64,8 @@ const DashboardUser = () => {
           <p className="text-sm text-textColor font-semibold w-275 min-w-[160px] text-center">Role</p>{" "}
         </div>
         
-              <DashboardUserCard  />
+            <DashboardUserCard  />
            
-              <DashboardUserCard />
-
-              <DashboardUserCard />
             
       </div>
     </div>
