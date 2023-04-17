@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <header className="flex items-center w-full p-4 md:py-2 md:px-6">
       <NavLink to={"/"}>
-      <img src={Logo} className="w-16" alt="" />
+      <img src={Logo} className="w-24" alt="" />
       </NavLink>
 
       <ul className="flex items-center justify-center ml-7">
@@ -50,11 +50,7 @@ const Header = () => {
             exit={{ opacity: 0, y: 50 }}
             className="absolute z-10 top-12 right-0 w-275 p-4 gap-4 bg-card shadow-lg rounded-lg backdrop-blur-sm flex flex-col"
           >
-           <NavLink to={"/userProfile"}>
-              <p className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out">
-                Profile
-              </p>
-            </NavLink>
+           
             
             <NavLink to={"/favourites"}>
               <p className="text-base text-textColor hover:font-semibold duration-150 transition-all ease-in-out">

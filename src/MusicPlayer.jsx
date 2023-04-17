@@ -13,19 +13,19 @@ const MusicPlayer = () => {
       {isMaximixe &&
         <div className="w-full full items-center gap-3 p-4 flex relative" >
           <img onClick={() => setisPalylist(false)}
-            src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlnaHR8fHx8fHwxNjgxNTAzOTA3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
-            className="w-40 h-20 object-cover rounded-md"
+            src="https://i1.sndcdn.com/artworks-000011754532-kxub3f-t500x500.jpg"
+            className="w-20 h-20 object-cover rounded-md"
             alt=""
           />
           <div className="flex items-start flex-col">
             <p className="text-xl text-headingColor font-semibold">
-              Faded
-              <span className="text-base">Alan's Hit</span>
+              Ankhon k Sagar
+              <span className="text-base">{" "}Pakistani Hits</span>
             </p>
             <p className="text-textColor">
-              Alan Walker
+               Shafqat Amanat Ali
               <span className="text-sm text-textColor font-semibold">
-                Pop
+              {" "}Classic
               </span>
             </p>
             <motion.i  onClick={() => setisPalylist(true)} >
@@ -54,7 +54,7 @@ const MusicPlayer = () => {
       >
         <div className="w-40 h-40 rounded-full flex items-center justify-center  relative " onClick={() => setisMaximixe(false)} >
           <img
-            src="https://images.unsplash.com/photo-1498036882173-b41c28a8ba34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8bmlnaHR8fHx8fHwxNjgxNTAzOTA3&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080"
+            src="https://i1.sndcdn.com/artworks-000011754532-kxub3f-t500x500.jpg"
             className="z-50 w-32 h-32 rounded-full object-cover cursor-pointer"
             alt=""
           />
@@ -76,13 +76,34 @@ export const PlayListCard = () => {
         <IoMusicalNote className="text-textColor group-hover:text-headingColor text-2xl cursor-pointer" />
         <div className="flex items-start flex-col">
           <p className="text-lg text-headingColor font-semibold">
-            Faded
-            <span className="text-base">Album</span>
+            Ankhon k Sagar
+            <span className="text-base">{" "}Album</span>
           </p>
           <p className="text-textColor">
-            Alan 
+            Shafqat Amanat Ali 
             <span className="text-sm text-textColor font-semibold">
-              Pop
+            {" "}Classic
+            </span>
+          </p>
+        </div>
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, translateX: -50 }}
+        animate={{ opacity: 1, translateX: 0 }}
+        transition={{ duration: 0.3}}
+        className="group w-full p-4 hover:bg-card flex gap-3 items-center cursor-pointer bg-card bg-transparent"
+      >
+        <IoMusicalNote className="text-textColor group-hover:text-headingColor text-2xl cursor-pointer" />
+        <div className="flex items-start flex-col">
+          <p className="text-lg text-headingColor font-semibold">
+            Faded
+            <span className="text-base">{" "}Album</span>
+          </p>
+          <p className="text-textColor">
+            Alan Walker
+            <span className="text-sm text-textColor font-semibold">
+              {" "}Pop
             </span>
           </p>
         </div>

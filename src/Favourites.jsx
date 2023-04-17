@@ -1,15 +1,11 @@
-import React, { useEffect, useState } from "react";
-//import { useStateValue } from "./Context/StateProvider";
+import React from "react";
 import { motion } from "framer-motion";
-import { MdDelete } from "react-icons/md";
 import Header from "./Header";
 import SearchBar from "./SearchBar";
 import { AiFillHeart } from "react-icons/ai"
-//import { actionType } from "../Context/reducer";
-//import { getAllAlbums } from "./api";
 
 const Favourites = () => {
-  //const [{ allAlbums }, dispatch] = useStateValue();
+
   
   return (
     <div className="w-full h-auto flex flex-col items-center justify-center bg-primary">
@@ -178,27 +174,6 @@ export const FavouritesCard = () => {
   
 
       
-        {/* <motion.div
-          initial={{ opacity: 0, scale: 0.5 }}
-          animate={{ opacity: 1, scale: 1 }}
-          exit={{ opacity: 0, scale: 0.5 }}
-          className="absolute inset-0 p-2 bg-darkOverlay  backdrop-blur-md flex flex-col items-center justify-center gap-4"
-        >
-          <p className="text-gray-100 text-base text-center">
-            Are you sure do you want to delete this?
-          </p>
-          <div className="flex items-center w-full justify-center gap-3">
-            <div className="bg-red-300 px-3 rounded-md">
-              <p className="text-headingColor text-sm">Yes</p>
-            </div>
-            <div
-              className="bg-green-300 px-3 rounded-md"
-              
-            >
-              <p className="text-headingColor text-sm">No</p>
-            </div>
-          </div>
-        </motion.div> */}
  
     </motion.div>
 

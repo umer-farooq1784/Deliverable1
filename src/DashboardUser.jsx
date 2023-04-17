@@ -1,9 +1,6 @@
-import React, { useEffect, useState } from "react";
- import { AiOutlineClear } from "react-icons/ai";
- import { motion } from "framer-motion";
-// import { getAllUsers } from "../api";
-// import { actionType } from "../Context/reducer";
-// import { useStateValue } from "../Context/StateProvider";
+import React from "react";
+import { AiOutlineClear } from "react-icons/ai";
+import { motion } from "framer-motion";
 import DashboardUserCard from "./DashboardUserCard";
 
 const DashboardUser = () => {
