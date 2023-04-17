@@ -43,7 +43,7 @@ const DashboardSongs = () => {
         <div className="absolute top-4 left-4">
           <p className="text-xl font-bold">
             <span className="text-sm font-semibold text-textColor">
-              Count :{" "}
+              Count :{"3"}
             </span>
           </p>
         </div>
