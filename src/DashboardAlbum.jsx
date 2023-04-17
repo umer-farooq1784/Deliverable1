@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from "react";
-//import { useStateValue } from "./Context/StateProvider";
+
 import { motion } from "framer-motion";
 import { MdDelete } from "react-icons/md";
-//import { actionType } from "../Context/reducer";
-//import { getAllAlbums } from "./api";
+
 
 const DashboardAlbum = () => {
-  //const [{ allAlbums }, dispatch] = useStateValue();
+ 
   
   return (
     <div className="w-full p-4 flex items-center justify-center flex-col">
@@ -97,29 +96,7 @@ export const AlbumCard = () => {
       <MdDelete className=" text-gray-400 hover:text-red-400 text-xl cursor-pointer" />
 </motion.i>
 
-    {/*
-      <motion.div
-        initial={{ opacity: 0, scale: 0.5 }}
-        animate={{ opacity: 1, scale: 1 }}
-        exit={{ opacity: 0, scale: 0.5 }}
-        className="absolute inset-0 p-2 bg-darkOverlay  backdrop-blur-md flex flex-col items-center justify-center gap-4"
-      >
-        <p className="text-gray-100 text-base text-center">
-          Are you sure do you want to delete this?
-        </p>
-        <div className="flex items-center w-full justify-center gap-3">
-          <div className="bg-red-300 px-3 rounded-md">
-            <p className="text-headingColor text-sm">Yes</p>
-          </div>
-          <div
-            className="bg-green-300 px-3 rounded-md"
-            
-          >
-            <p className="text-headingColor text-sm">No</p>
-          </div>
-        </div>
-      </motion.div>
-*/}
+   
   </motion.div>
 
 

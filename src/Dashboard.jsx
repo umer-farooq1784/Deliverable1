@@ -1,14 +1,12 @@
 import React from "react";
 import { IoHome } from "react-icons/io5";
 import { NavLink, Route, Routes } from "react-router-dom";
-import { DashboardNewSong } from ".";
 import { isActiveStyles, isNotActiveStyles } from "./utils/styles";
 import DashboardArtist from "./DashboardArtist";
-import DashboardAlbum from "./DashBoardAlbum";
+import DashboardAlbum from "./DashboardAlbum";
 import DashboardHome from "./DashboardHome";
 import DashboardSongs from "./DashboardSongs";
 import DashboardUser from "./DashboardUser";
-//import DashboardNewSong from "./DashboardNewSong";
 import Header from "./Header";
 
 const Dashboard = () => {
@@ -40,7 +38,7 @@ const Dashboard = () => {
           <Route path="/home" element={<DashboardHome />} />
           
           
-          {/*<Route path="/newSong" element={<DashboardNewSong />} />*/}
+          {}
         </Routes>
       </div>
     </div>

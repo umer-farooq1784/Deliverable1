@@ -1,9 +1,5 @@
 import React, { useState } from "react";
-//import moment from "moment";
 import { motion } from "framer-motion";
-//import { changingUserRole, getAllUsers, removeUser } from "../api";
-//import { actionType } from "../Context/reducer";
-//import { useStateValue } from "../Context/StateProvider";
 import { MdDelete } from "react-icons/md";
 
 const DashboardUserCard = () => {
@@ -23,7 +19,7 @@ const DashboardUserCard = () => {
         <motion.div
           whileTap={{ scale: 0.75 }}
           className="absolute left-4 w-8 h-8 rounded-md flex items-center justify-center bg-gray-200"
-          //onClick={() => deleteuser(data._id)}
+          
         >
           <MdDelete className="text-xl text-red-400 hover:text-red-500" />
         </motion.div>
@@ -47,7 +43,7 @@ const DashboardUserCard = () => {
           <motion.p
             whileTap={{ scale: 0.75 }}
             className="text-[10px]  font-semibold text-textColor px-1 bg-purple-200 rounded-sm hover:shadow-md"
-            //onClick={() => setIsUpdateRole(true)}
+            
           >
            Premium
           </motion.p>       
@@ -70,7 +66,7 @@ const DashboardUserCard = () => {
         <motion.div
           whileTap={{ scale: 0.75 }}
           className="absolute left-4 w-8 h-8 rounded-md flex items-center justify-center bg-gray-200"
-          //onClick={() => deleteuser(data._id)}
+          
         >
           <MdDelete className="text-xl text-red-400 hover:text-red-500" />
         </motion.div>
@@ -146,7 +142,7 @@ const DashboardUserCard = () => {
         <motion.div
           whileTap={{ scale: 0.75 }}
           className="absolute left-4 w-8 h-8 rounded-md flex items-center justify-center bg-gray-200"
-          //onClick={() => deleteuser(data._id)}
+          
         >
           <MdDelete className="text-xl text-red-400 hover:text-red-500" />
         </motion.div>

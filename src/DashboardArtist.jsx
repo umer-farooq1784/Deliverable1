@@ -1,15 +1,10 @@
 import React, {  useState } from "react";
 import { motion } from "framer-motion";
-
-//import { useStateValue } from "./Context/StateProvider";
-//import { Link } from "react-router-dom";
 import { IoLogoInstagram, IoLogoTwitter } from "react-icons/io5";
 import { MdDelete } from "react-icons/md";
-//import { getAllArtist } from "../api";
-//import { actionType } from "../Context/reducer";
 
 const DashboardArtist = () => {
-  //const [{ artists }, dispatch] = useStateValue();
+ 
 
   return (
     <div className="w-full p-4 flex items-center justify-center flex-col">
